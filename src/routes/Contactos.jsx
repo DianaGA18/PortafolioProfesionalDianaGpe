@@ -3,7 +3,9 @@ import React from 'react'
 const Contactos = () => {
   return (
     <div className="social-links bg-center">
-      <a href="https://api.whatsapp.com/send/?phone=5523518544&text&type=phone_number&app_absent=0" className='mr-5'><h3>Tel: 55-23-51-85-44</h3></a>
+      <a href="https://api.whatsapp.com/send/?phone=5523518544&text&type=phone_number&app_absent=0" className='mr-5'>
+      <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp" />
+      </a>
       <a href="https://www.linkedin.com/in/diana-guadalupe-gonzalez-alfaro-325392261/" target="_blank" rel="noopener noreferrer">
         <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
       </a>
