@@ -1,0 +1,112 @@
+/* styles.css */
+body {
+  margin: 0; /* Eliminar márgenes por defecto */
+  padding: 0; /* Eliminar relleno por defecto */
+  box-sizing: border-box; /* Asegurarse de que el box-sizing sea border-box */
+}
+
+nav {
+  background-color: rgb(3, 45, 96); /* Color azul para el fondo del nav */
+  padding: 20px; /* Espaciado interno del nav */
+  position: fixed; /* Fijar el nav en la parte superior */
+  top: 0; /* Posición en la parte superior */
+  left: 0; /* Posicionar el nav desde el borde izquierdo */
+  width: 100%; /* Abarcar todo el ancho de la pantalla */
+  z-index: 1000; /* Asegurarse de que esté por encima de otros elementos */
+  display: flex; /* Usar flexbox para alinear elementos */
+  justify-content: center; /* Centrar horizontalmente los elementos */
+  align-items: center; /* Centrar verticalmente los elementos */
+}
+
+nav a {
+  text-decoration: none;
+  margin: 0 5px; /* Espaciado entre los enlaces */
+  font-size: 15px; /* Tamaño de la fuente */
+  color: white; /* Color de texto blanco */
+}
+
+nav a.active {
+  font-weight: bold; /* Haz que el texto activo sea más audaz */
+}
+
+nav a.active[href="/python"] {
+  color: #1e6ded; /* Azul cielo para Python */
+}
+
+nav a.active[href="/javascript"] {
+  color: yellow; /* Amarillo para JavaScript */
+}
+
+nav a.active[href="/ctt"] {
+  color: #f34b7d; /* Morado oscuro para CSS */
+}
+
+nav a.active[href="/c"] {
+  color: #555555; /* Azul fuerte para PHP */
+}
+
+nav a.active[href="/kotlin"] {
+  color: #A97BFF; /* Morado claro para Kotlin */
+}
+
+nav a.active[href="/java"] {
+  color: #a5682a; /* Café para Java */
+}
+
+nav a.active[href="/dart"] {
+  color: #01f9e0a3; /* Agua marina para Dart */
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-section {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.left-column, .right-column {
+  flex: 1;
+  padding: 20px;
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-image img {
+  border-radius: 20%;
+  width: 150px;
+  height: 150px;
+}
+
+.intro-text {
+  text-align: center;
+}
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.centered-section {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.tech-icons img {
+  width: 100%;
+  max-width: 800px;
+}
+
+.contact-link a {
+  text-decoration: none;
+  color: inherit;
+}
